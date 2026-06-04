@@ -1,6 +1,7 @@
 #!/bin/bash
 
 PACKAGES_TO_DISABLE=(
+    # adb shell pm list packages -d -s | sed 's/package://g' | sort
     android.autoinstalls.config.samsung
     com.android.chrome
     com.android.dreams.basic
@@ -38,6 +39,7 @@ PACKAGES_TO_DISABLE=(
     com.samsung.android.aremojieditor
     com.samsung.android.authfw
     com.samsung.android.bbc.bbcagent
+    com.samsung.android.bixby.agent
     com.samsung.android.carkey
     com.samsung.android.dkey
     com.samsung.android.dqagent
@@ -58,11 +60,13 @@ PACKAGES_TO_DISABLE=(
     com.samsung.android.rampart
     com.samsung.android.samsungpass
     com.samsung.android.samsungpassautofill
+    com.samsung.android.smartsuggestions
     com.samsung.android.themestore
     com.samsung.android.visionintelligence
     com.samsung.cmfa.AuthTouch
     com.samsung.knox.securefolder
     com.sec.android.app.billing
+    com.sec.android.app.dexonpc
     com.sec.android.app.vepreload
     com.sec.android.easyMover
     com.sec.android.mimage.avatarstickers
